@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="icon" href="/data/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+    <script src="index.js" defer ></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="/index.html" class="logo">
+                <img src="/data/download.png" alt="Rthr Promotions Logo" style="height: 60px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); background-color: #fff; padding: 5px;">
+                <span style="color: #fdf5e6; font-size: 1.8rem; font-weight: bold; margin-left: 10px;">Rthr Promotions</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/pages/services.html">Services</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div id="contact-info">
+            <div>
+                <h3>Have inquiries or require support?</h3>
+                <p>Contact us through this form, and our team will respond quickly. We're here to answer your questions, offer support, or explore how we can assist you. Your message matters to us, and we look forward to connecting with you soon!</p>
+            </div>
+        </div>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rthr Promotions. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
