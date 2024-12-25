@@ -1,0 +1,380 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf8f5;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4a3f35;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 5px;
+}
+
+.logo span {
+    color: #fdf5e6;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fdf5e6;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #d9c3a3, #fdf5e6);
+    color: #4a3f35;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4a3f35;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffd700;
+}
+
+/* Services Section */
+/* General styles */
+.services {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Service Cards Layout */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between the cards */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px; /* Fixed width for each card */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Adds a subtle hover effect */
+}
+
+/* Image styling for the first card */
+.card img {
+    width: 100%; /* Make image responsive to card width */
+    height: auto;
+    max-height: 150px; /* Restricts image height */
+    object-fit: contain; /* Ensures the image doesn't stretch */
+    margin-bottom: 15px;
+}
+
+/* Styling for the text inside the card */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.see-more {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.See-More > a{
+    color: red;
+    font-size: 500;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.See-More ::selection{
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+}
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fdf5e6;
+    
+}
+.about > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.bold-heading{
+    font-size: 500;
+    font-weight: bold;
+    text-shadow: 0 0.1dvh 0.1dvw;
+}
+
+.about > div > img{
+    height: 50vh;
+    border-radius: 5%;
+    width: 50vw;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #4a3f35;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #4a3f35;
+    line-height: 1.6;
+}
+.about h3{
+    margin-top: 100px;
+    background: linear-gradient(45deg, #FFD700, #FFC107);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.about h2{
+    margin-top: 50px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f6f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the two sections */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #4a3f35;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#contact-info {
+    flex: 1 1 45%; /* Ensures the section takes up 45% of the width, but allows for resizing */
+    min-width: 280px; /* Prevents it from becoming too narrow on small screens */
+}
+
+#contact-info h3 {
+    font-size: 1.8rem;
+    color: #4a3f35;
+    margin-bottom: 20px;
+}
+
+#contact-info p {
+    font-size: 1rem;
+    color: #6b6b6b;
+    line-height: 1.5;
+}
+
+form {
+    flex: 1 1 45%; /* Ensures the form section takes up 45% of the width, but allows resizing */
+    min-width: 280px; /* Prevents the form from becoming too narrow on small screens */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1rem;
+    color: #4a3f35;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+form button {
+    background-color: #4a3f35;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3a2f24;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a3f35;
+    color: #fdf5e6;
+}
+
+
+
+
+.partners {
+    background-color: #f9f9f9; /* Background color for the partners section */
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.partners h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden; /* Ensures content outside the slider isn't visible */
+    white-space: nowrap;
+}
+
+.slider-track {
+    display: flex;
+    animation: scroll-left 10s linear infinite; /* Infinite scroll animation */
+}
+
+.slide {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-100%); /* Start fully off-screen to the right */
+    }
+    100% {
+        transform: translateX(100%); /* Move fully off-screen to the left */
+    }
+}
+
+
+.slide {
+    display: flex; /* Enables flexbox for alignment */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    overflow: hidden; /* Ensures content outside the slide isn't visible */
+    width: 150px; /* Set a fixed width for the slides */
+    height: 150px; /* Set a fixed height for the slides */
+    background-color: #f1f1f1; /* Optional: background for better visibility */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    
+}
+
+.slide > img {
+    max-width: 100%; /* Ensures the image does not exceed the slide width */
+    max-height: 100%; /* Ensures the image does not exceed the slide height */
+    object-fit: contain; /* Maintains the aspect ratio of the image */
+}
